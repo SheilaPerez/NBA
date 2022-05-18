@@ -2,7 +2,7 @@
 const Players = () => {
   return (
     <div>
-      
+      Players
     </div>
   )
 };

@@ -1,6 +1,7 @@
 import styles from '../Menu/Menu.module.css';
 import { FaRegCaretSquareLeft, FaRegCaretSquareRight } from 'react-icons/fa';
-import {useState} from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
 
@@ -17,9 +18,9 @@ const Menu = () => {
             : 
             <FaRegCaretSquareRight className={styles.closeIcon} onClick={handleclickCloseMenu}></FaRegCaretSquareRight>
       }
-      <h3 className={ `${isOpen ? styles.titleMenu : styles.menuIsClosed}`  }>Menu</h3>
-      <p className={ `${isOpen ? styles.linksMenu : styles.menuIsClosed}`  }>Teams</p>
-      <p className={ `${isOpen ? styles.linksMenu : styles.menuIsClosed}`  }>Players</p>
+      <h3 className={`${isOpen ? styles.titleMenu : styles.menuIsClosed}`}>Menu</h3>
+      <Link to="/teams" className={`${isOpen ? styles.linksMenu : styles.menuIsClosed}`}>Teams</Link>
+      <Link to="/players" className={ `${isOpen ? styles.linksMenu : styles.menuIsClosed}`}>Players</Link>
     </div>
   )
 };

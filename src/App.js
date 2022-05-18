@@ -1,10 +1,18 @@
-import Menu from '../src/Pages/Menu';
+import Menu from '../src/Components/Menu';
+import Teams from '../src/Pages/Teams';
+import Players from '../src/Pages/Players';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
-    <div>
-      <Menu></Menu>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Menu></Menu>}></Route>   
+        <Route path="/teams" element={<Teams></Teams>}></Route>  
+        <Route path="/players" element={<Players></Players>}></Route>    
+      </Routes>
+    </Router>
   );
 }
 
