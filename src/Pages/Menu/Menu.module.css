@@ -1,0 +1,34 @@
+.menuContainer {
+    background-color: #112B3C;
+    width: 20%;
+    height: 100vh;
+    padding: 10px;
+    position: relative;
+    transition: width .5s ease-in-out;
+}
+
+.closeMenu {
+    width: 5%;
+    transition: width .5s ease-in-out;
+}
+.closeIcon {
+    background-color: white;
+    font-size: 40px;
+    border-radius: 20%;
+    position: absolute;
+    right: -20px;
+    cursor: pointer;
+}
+
+.menuIsClosed {
+    display: none;
+
+}
+
+.titleMenu {
+    color: #F32424;
+}
+
+.linksMenu {
+    color: white;
+}
