@@ -27,8 +27,9 @@
 
 .titleMenu {
     color: #F32424;
-    font-size: 25px;
+    font-size: 29px;
     margin: 12px 0px 28px 12px;
+    text-decoration: none;
 }
 
 .linksMenu {

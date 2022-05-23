@@ -1,7 +1,8 @@
+import styles from '../Players/Players.module.css';
 
 const Players = () => {
   return (
-    <div>
+    <div className={styles.playersContainer}>
       Players
     </div>
   )

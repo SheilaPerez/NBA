@@ -11,17 +11,16 @@ const Menu = () => {
     setIsOpen(!isOpen);
   }
   return (
-    
-    <div className={`${styles.menuContainer} ${isOpen ? "" : styles.closeMenu}`}>
-      {isOpen ? 
-            <FaRegCaretSquareLeft className={styles.closeIcon} onClick={handleclickCloseMenu}></FaRegCaretSquareLeft>
-            : 
-            <FaRegCaretSquareRight className={styles.closeIcon} onClick={handleclickCloseMenu}></FaRegCaretSquareRight>
-      }
-      <h3 className={`${isOpen ? styles.titleMenu : styles.menuIsClosed}`}>Menu</h3>
-      <Link to="/teams" className={`${isOpen ? styles.linksMenu : styles.menuIsClosed}`}>Teams</Link>
-      <Link to="/players" className={ `${isOpen ? styles.linksMenu : styles.menuIsClosed}`}>Players</Link>
-    </div>
+      <div className={`${styles.menuContainer} ${isOpen ? "" : styles.closeMenu}`}>
+          {isOpen ? 
+              <FaRegCaretSquareLeft className={styles.closeIcon} onClick={handleclickCloseMenu}></FaRegCaretSquareLeft>
+              : 
+              <FaRegCaretSquareRight className={styles.closeIcon} onClick={handleclickCloseMenu}></FaRegCaretSquareRight>
+          }
+        <Link to="/" exact className={`${isOpen ? styles.titleMenu : styles.menuIsClosed}`}>Menu</Link>
+        <Link to="/teams" className={`${isOpen ? styles.linksMenu : styles.menuIsClosed}`}>Teams</Link>
+        <Link to="/players" className={ `${isOpen ? styles.linksMenu : styles.menuIsClosed}`}>Players</Link>
+      </div>
   )
 };
 
