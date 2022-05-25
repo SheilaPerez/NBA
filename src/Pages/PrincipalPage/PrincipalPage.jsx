@@ -3,7 +3,7 @@ import styles from '../PrincipalPage/PrincipalPage.module.css';
 const PrincipalPage = () => {
   return (
     <div className={styles.principalPageContainer}>
-      holaaaa
+      pag princpial
     </div>
   )
 };

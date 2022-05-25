@@ -1,0 +1,40 @@
+li {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    margin: 20px 20px 0 20px;
+    align-items: flex-start;
+}
+
+.leaguesContainer {
+    display: flex;
+}
+
+.logo {
+    width: 360px;
+    margin: 20px;
+}
+
+.logoError {
+    width: 360px;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.titleDescription {
+    font-weight: 800;
+    display: inline-block;
+    margin-right: 10px;
+    color:#003e8f;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+}
+
+.description {
+    display: inline-block;
+    font-family: 'Anton', sans-serif;
+}
+
+
