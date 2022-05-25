@@ -1,15 +1,14 @@
 .menuContainer {
     background-color: #112B3C;
-    width: 20%;
-    height: 100vh;
+    min-width: 180px;
     padding: 10px;
     position: relative;
-    transition: width .5s ease-in-out;
+    transition: min-width .5s ease-in-out;
 }
 
 .closeMenu {
-    width: 5%;
-    transition: width .5s ease-in-out;
+    min-width: 1%;
+    transition: min-width .5s ease-in-out;
 }
 .closeIcon {
     background-color: white;

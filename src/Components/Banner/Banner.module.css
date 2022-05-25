@@ -1,0 +1,7 @@
+.banner {
+    background-image: url(../../../public/banner.jpeg);
+    background-position-y: center;
+    height: 202px;
+    background-size: cover;
+
+}
