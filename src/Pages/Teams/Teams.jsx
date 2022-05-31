@@ -2,6 +2,8 @@ import styles from '../Teams/Teams.module.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import NotFoundImage from '../../Components/NotFoundImage';
+import { symbol } from 'prop-types';
 
 const Teams = () => {
   const [teamsList, setTeamsList] = useState([]);
@@ -14,11 +16,7 @@ useEffect(() => {
       'X-RapidAPI-Key': 'e4ac503646mshd5339019272f688p15e8b5jsn8e5d67828ce6'
     }
   }).then(function (response) {
-    console.log(response.data.response);
-    const teamsArray = response.data.response;
-    setTeamsList(teamsArray);
-  }).catch(function (error) {
-    console.error(error);
+    setTeamsList(response.data.response);
   });
 },[])
 
@@ -33,7 +31,7 @@ useEffect(() => {
         return (
           <div onClick={ () => handleClickTeam(team) } className={styles.listContainer}>
             {team.logo === null ?
-              <img src="https://cdn3.vectorstock.com/i/1000x1000/31/47/404-error-page-not-found-design-template-vector-21393147.jpg" className={styles.logoError} />
+              <NotFoundImage size={'small'} className={styles.logo}></NotFoundImage>
               :
               <img src={team.logo} className={styles.logo} />}
             <p className={styles.TitleDescription}></p><p className={styles.description}>{team.name}</p>

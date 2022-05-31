@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styles from '../TeamInformation/TeamInformation.module.css';
 import TeamsLeagues from '../../Components/TeamsLeagues';
+import NotFoundImage from '../../Components/NotFoundImage';
 
 const TeamInformation = () => {
   const [teamInfo, setTeamInfo] = useState(null);
@@ -10,24 +11,20 @@ const TeamInformation = () => {
 
   useEffect(() => {
     axios.get('https://api-nba-v1.p.rapidapi.com/teams', {
-      params: { id: id },
+      params: { id },
       headers: {
         'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com',
         'X-RapidAPI-Key': 'e4ac503646mshd5339019272f688p15e8b5jsn8e5d67828ce6'
       }
     }).then(function (response) {
-      console.log(response.data.response);
-      const teamInfo = response.data.response;
-      setTeamInfo(teamInfo);
-    }).catch(function (error) {
-      console.error(error);
+      setTeamInfo(response.data.response);
     });
   }, [])
   
   return teamInfo ? (
     <div className={styles.container}>
-        {teamInfo[0].logo === null ?
-              <img src="https://cdn3.vectorstock.com/i/1000x1000/31/47/404-error-page-not-found-design-template-vector-21393147.jpg" className={styles.logoError} />
+      {teamInfo[0].logo === null ?
+        <NotFoundImage size={'big'}></NotFoundImage>
               :
               <img src={teamInfo[0].logo} className={styles.logo} />}
         <ul>
