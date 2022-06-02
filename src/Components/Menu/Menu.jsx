@@ -21,7 +21,7 @@ const Menu = () => {
           }
         <Link to="/" className={`${isOpen ? styles.titleMenu : styles.menuIsClosed}`}>Menu</Link>
         <Link to="/teams" className={`${isOpen ? styles.linksMenu : styles.menuIsClosed}`}>Teams</Link>
-        <Link to="/players" className={ `${isOpen ? styles.linksMenu : styles.menuIsClosed}`}>Players</Link>
+        <Link to="/foundplayers" className={ `${isOpen ? styles.linksMenu : styles.menuIsClosed}`}>Players</Link>
       </div>
     </>
   )

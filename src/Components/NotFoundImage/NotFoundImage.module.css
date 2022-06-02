@@ -5,6 +5,11 @@
 }
 
 .small {
-    width: 5%; 
+    width: 60px; 
     background-color: white;
+}
+
+.playerPageErrorImg {
+    margin: 0px 100px 0px 41px;
+
 }

@@ -1,0 +1,52 @@
+.playersContainer {
+    margin: 20px 40px;
+    min-width: 932px;
+}
+
+.title {
+    text-transform: uppercase;
+    color:#003e8f;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+}
+
+.logo{
+    width: 60px; 
+    background-color: white;
+    margin: 0px 100px 0px 40px;
+}
+
+.listContainer {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #112B3C;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.linkPlayers {
+    margin-right: 40px;
+    text-decoration: none;
+    font-size:20px;
+    font-family:'Teko', sans-serif;
+    text-align: center;
+    width:96px;
+    height:40px;
+    color:rgb(243, 9, 9);
+    border-top-right-radius:8px;
+    border-bottom-left-radius:8px;
+    box-shadow: 16px 14px 16px -7px #003e8f;
+}
+
+.linkPlayers:hover {
+    color: #003e8f;
+    font-size: 30px;
+}
+
+.logoName {
+    display: flex;
+    align-items: center;
+}

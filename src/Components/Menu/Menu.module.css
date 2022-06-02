@@ -26,9 +26,10 @@
 
 .titleMenu {
     color: #F32424;
-    font-size: 29px;
+    font-size: 35px;
     margin: 12px 0px 28px 12px;
     text-decoration: none;
+    font-family: 'Teko', sans-serif;
 }
 
 .linksMenu {
@@ -37,4 +38,5 @@
     font-size: 20px;
     text-decoration: none;
     margin: 12px;
+    font-family: 'Anton', sans-serif;
 }

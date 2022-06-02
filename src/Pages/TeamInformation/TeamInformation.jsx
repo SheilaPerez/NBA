@@ -26,7 +26,7 @@ const TeamInformation = () => {
       {teamInfo[0].logo === null ?
         <NotFoundImage size={'big'}></NotFoundImage>
               :
-              <img src={teamInfo[0].logo} className={styles.logo} />}
+        <img src={teamInfo[0].logo} className={styles.logo} />}
         <ul>
         <li>
           <p className={styles.titleDescription}>Name: </p>
