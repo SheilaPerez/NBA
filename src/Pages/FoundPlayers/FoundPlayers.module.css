@@ -50,3 +50,7 @@
     display: flex;
     align-items: center;
 }
+
+.playerPageErrorImg {
+    margin: 0px 100px 0px 41px;
+}

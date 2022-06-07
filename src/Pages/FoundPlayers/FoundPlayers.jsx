@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const FoundPlayers = ({teams:teams}) => {
 
+  const logoError = `${styles.logo} ${styles.playerPageErrorImg}`
   return (
     <div className={styles.playersContainer}>
       <h1 className={styles.title}> - list players - </h1>
@@ -12,7 +13,7 @@ const FoundPlayers = ({teams:teams}) => {
           <div className={styles.listContainer}>
             <div className={styles.logoName}>
               {team.logo === null ?
-                <NotFoundImage size={'small'} className={styles.logo}></NotFoundImage>
+                <div className={logoError}><NotFoundImage size={'small'} ></NotFoundImage></div>
                 :
                 <img src={team.logo} className={styles.logo} />}
                 <p className={styles.TitleDescription}>{team.name}</p>

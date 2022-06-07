@@ -45,3 +45,14 @@
     color: white;
     display: inline-block;
 }
+
+.notFoundContainer {
+    height: 100vh;
+    width: 990px;
+}
+.notFound {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: grey
+}
