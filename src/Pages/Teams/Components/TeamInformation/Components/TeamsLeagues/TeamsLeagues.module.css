@@ -13,20 +13,38 @@
     border: 1px solid #293462;;
     padding: 10px;
     display: inline-block;
-    width: 176px;
+    width: 136px;
     margin-left: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 10px 16px 19px -5px rgb(25 52 107);
+    font-size: 12px;
+
 }
 
+.leagueContainer {
+    display: flex;
+}
 
 .league {
     color: #F32424;
     font-family: 'Teko', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .description {
     font-family: 'Anton', sans-serif;
+}
+
+.titleDescription {
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    background-color: #44aaea7c;
+    padding: 10px;
+    margin: 0;
+    height: 23px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
 }

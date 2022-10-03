@@ -1,9 +1,12 @@
 .menuContainer {
-    background-color: #112B3C;
+    background-color: #D7B629;
     min-width: 180px;
     padding: 10px;
     position: relative;
     transition: min-width .5s ease-in-out;
+    position: absolute;
+    top: 297px;
+    height: 100vh;
 }
 
 .closeMenu {
@@ -25,8 +28,8 @@
 }
 
 .titleMenu {
-    color: #F32424;
-    font-size: 35px;
+    color: black;
+    font-size: 50px;
     margin: 12px 0px 28px 12px;
     text-decoration: none;
     font-family: 'Teko', sans-serif;

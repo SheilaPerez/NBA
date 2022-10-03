@@ -1,0 +1,45 @@
+.TitleDescription {
+    display: inline-block;
+    font-weight: 800;
+    color: #003e8f;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5px solid #112B3C;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    width: 180px;
+}
+
+.listContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.description {
+    font-family: 'Anton', sans-serif;
+}
+
+.name {
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+}
+
+.logo{
+    width: 80px; 
+    background-color: white;
+}
+
+.listContainer:hover .logo {
+    transition: all .5s ease-in-out;
+    -webkit-transform:scale(1.3);transform:scale(2);
+}

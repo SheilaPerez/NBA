@@ -1,15 +1,15 @@
-import Menu from '../src/Components/Menu';
-import Teams from '../src/Pages/Teams';
-import FoundPlayers from '../src/Pages/FoundPlayers';
-import PrincipalPage from '../src/Pages/PrincipalPage';
-import TeamInformation from '../src/Pages/TeamInformation';
-import Banner from '../src/Components/Banner';
-import PlayersList from '../src/Pages/PlayersList';
+import Menu from './Components/Menu';
+import Teams from './Pages/Teams';
+import FoundPlayers from './Pages/PlayersList/Components/FoundPlayers';
+import PrincipalPage from './Pages/PrincipalPage';
+import TeamInformation from './Pages/Teams/Components/TeamInformation';
+import Banner from './Components/Banner';
+import PlayersList from './Pages/PlayersList';
 import styles from './App.module.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useEffect, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import axios from 'axios';
-
+import React from 'react';
 function App() {
   const [teams, setTeams] = useState([]);
 
@@ -26,14 +26,14 @@ function App() {
   }, [])
   
   return (
-    <div className={styles.container}>
+    <div>
       <Router>
+        <Banner></Banner>
         <Menu></Menu>
-        <div>
-          <Banner></Banner>
+        <div className={styles.routesContainer}>
           <Routes>
-            <Route path="/" exact element={<PrincipalPage></PrincipalPage>}></Route>   
-            <Route path="/teams"  element={<Teams teams={teams} />}></Route>  
+            <Route path="/" element={<PrincipalPage></PrincipalPage>}></Route>   
+            <Route path="/teams"  element={<Teams teamsList={teams} />}></Route>  
             <Route path="/foundplayers" element={<FoundPlayers teams={teams}></FoundPlayers>}></Route>
             <Route path="/teams/:id" element={<TeamInformation></TeamInformation>}></Route>
             <Route path="/playerslist/:id" element={<PlayersList />}></Route>

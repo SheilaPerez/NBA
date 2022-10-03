@@ -1,7 +1,8 @@
 .banner {
-    background-image: url(../../../public/banner.jpeg);
-    background-position-y: center;
-    height: 202px;
+    background-image: url(../../Assets/banner2.jpg);
+    background-position-y: inherit;
+    height: 354px;
     background-size: cover;
-
+    position: relative;
+    object-fit: cover;
 }
