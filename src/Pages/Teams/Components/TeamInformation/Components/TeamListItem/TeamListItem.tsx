@@ -6,11 +6,11 @@ interface Props {
 
 const TeamListItem: FC<Props> = ({description}) => {
     return (
-        <div>
-            <li className={styles.listItemsContainer}>
-                <p className={styles.description}>{description}</p>
-            </li>
-        </div>
+        <tr>
+            <div className={styles.listItemsContainer}>
+                <td className={styles.description}>{description}</td>
+            </div>
+        </tr>
     )
 }
 

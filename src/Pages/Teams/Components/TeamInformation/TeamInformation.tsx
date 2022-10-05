@@ -36,14 +36,14 @@ const TeamInformation = () => {
   }, [])
   
   return teamInfo ? (
-    <div className={styles.container}>
-      <div className={styles.tableTitles}>
-        <p className={styles.tableTitle}>Name</p>
-        <p className={styles.tableTitle}>NickName</p>
-        <p className={styles.tableTitle}>City</p>
-        <p className={styles.tableTitle}>Code</p>
-        <p className={styles.tableTitleAllStart}>All Start</p>
-      </div>
+    <table className={styles.container}>
+      <tr className={styles.tableTitles}>
+        <th className={styles.tableTitle}>Name</th>
+        <th className={styles.tableTitle}>NickName</th>
+        <th className={styles.tableTitle}>City</th>
+        <th className={styles.tableTitle}>Code</th>
+        <th className={styles.tableTitleAllStart}>All Start</th>
+      </tr>
       <ul className={styles.ulContainer}>
         <TeamListItem description={teamInfo.name}></TeamListItem>
         <TeamListItem description={teamInfo.nickname}></TeamListItem>
@@ -58,7 +58,7 @@ const TeamInformation = () => {
         </div>
       </ul>
       <TeamsLeagues leagues={teamInfo.leagues}></TeamsLeagues>
-    </div>
+    </table>
   ) : null
 };
 

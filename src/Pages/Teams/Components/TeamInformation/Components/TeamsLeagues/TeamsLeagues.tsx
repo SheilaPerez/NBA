@@ -8,8 +8,8 @@ interface Props {
 }
 
 const TeamsLeagues: FC<Props> = ({ leagues }) => {
-  return <div>
-          <p className={styles.titleDescription}>Leagues:</p>
+  return <div className={styles.content}>
+          <th className={styles.titleDescription}>Leagues:</th>
           <div className={styles.leagueContainer}>
           {Object.keys(leagues).map((league: string) => (
                   <div className={styles.container}>

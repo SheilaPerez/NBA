@@ -11,6 +11,7 @@ li {
     margin: 0;
     height: 23px;
     align-items: center;
+    width: 80%;
 }
 
 .tableTitle {
@@ -24,7 +25,6 @@ li {
 .ulContainer {
     display: flex;
     padding: 0;
-    border-bottom: 1px solid #b2b2b2;
 }
 
 .container {
