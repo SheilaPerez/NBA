@@ -19,3 +19,16 @@
 .listItemsContainer {
     margin-right: 105px;
 }
+
+@media only screen and (max-width: 1350px) {
+    .description {
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .listItemsContainer {
+        margin-right: 0;
+    }
+}

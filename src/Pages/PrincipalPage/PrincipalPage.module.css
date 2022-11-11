@@ -7,6 +7,12 @@
 @media only screen and (max-width: 840px) {
     .text {
         text-align: start;
-        margin: 20px 90px 0px 117px;
+        margin: 40px 31px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .text {
+        font-size: 20px;
     }
 }

@@ -36,29 +36,31 @@ const TeamInformation = () => {
   }, [])
   
   return teamInfo ? (
-    <table className={styles.container}>
-      <tr className={styles.tableTitles}>
-        <th className={styles.tableTitle}>Name</th>
-        <th className={styles.tableTitle}>NickName</th>
-        <th className={styles.tableTitle}>City</th>
-        <th className={styles.tableTitle}>Code</th>
-        <th className={styles.tableTitleAllStart}>All Start</th>
-      </tr>
-      <ul className={styles.ulContainer}>
-        <TeamListItem description={teamInfo.name}></TeamListItem>
-        <TeamListItem description={teamInfo.nickname}></TeamListItem>
-        <TeamListItem description={teamInfo.city}></TeamListItem>
-        <TeamListItem description={teamInfo.code}></TeamListItem>
-        <div className={styles.ulContainer}>
-          {teamInfo.allStar ?
-              <TeamListItem description={"Participated in All Star"}></TeamListItem>
-              :
-              <TeamListItem description={"Didn't participate in All Star"}></TeamListItem>
-            }
-        </div>
-      </ul>
+    <div className={styles.container}>
+      <div className={styles.infoContainer}>
+        <tr className={styles.tableTitles}>
+          <th className={styles.tableTitle}>Name</th>
+          <th className={styles.tableTitle}>NickName</th>
+          <th className={styles.tableTitle}>City</th>
+          <th className={styles.tableTitle}>Code</th>
+          <th className={styles.tableTitleAllStart}>All Start</th>
+        </tr>
+        <ul className={styles.ulContainer}>
+          <TeamListItem description={teamInfo.name}></TeamListItem>
+          <TeamListItem description={teamInfo.nickname}></TeamListItem>
+          <TeamListItem description={teamInfo.city}></TeamListItem>
+          <TeamListItem description={teamInfo.code}></TeamListItem>
+          <div>
+            {teamInfo.allStar ?
+                <TeamListItem description={"Participated in All Star"}></TeamListItem>
+                :
+                <TeamListItem description={"Didn't participate in All Star"}></TeamListItem>
+              }
+          </div>
+        </ul>
+      </div>
       <TeamsLeagues leagues={teamInfo.leagues}></TeamsLeagues>
-    </table>
+    </div>
   ) : null
 };
 

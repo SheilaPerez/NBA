@@ -19,11 +19,11 @@
     border-radius: 20px;
     box-shadow: 10px 16px 19px -5px rgb(25 52 107);
     font-size: 12px;
-
 }
 
 .leagueContainer {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .league {
@@ -45,9 +45,45 @@
     margin: 0;
     height: 23px;
     align-items: center;
-    width: 80%;
+    width: 845px;
     margin-bottom: 30px;
 }
 .content {
     width: 100%;
+}
+
+@media only screen and (max-width: 1350px) {
+ .titleDescription {
+    width: 500px;
+ }
+}
+
+@media only screen and (max-width: 850px) {
+    .titleDescription {
+       width: 300px;
+    }
+    .container {
+        width: 115px;
+    }
+}
+@media only screen and (max-width: 755px) {
+    .container {
+        width: 110px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        width: 90px;
+    }
+    .league {
+        margin: 0 5px;
+    }
+    .description {
+        margin: 0;
+    }
 }
